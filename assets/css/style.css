@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Josefin+Sans:ital@1&family=Lora:ital,wght@0,500;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Dosis", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.avatar {
+  height: 150px;
+  width: 150px;
+  background-size: cover;
+  border-radius: 50%;
+  background-image: url(../images/WhatsApp\ Image\ 2023-08-31\ at\ 17.58.44.jpg);
+}
+
+.container {
+  background-color: rgb(255, 124, 189);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 20px;
+  align-items: center;
+  border-radius: 10px;
+}
+
+h3 {
+  color: rgb(97, 70, 70);
+}
+
+.item {
+  background-color: antiquewhite;
+  padding: 1rem 10rem;
+  width: 100%;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.item a {
+  text-decoration: none;
+  color: brown;
+  font-size: 1.2rem;
+}
+
+.item:hover {
+  background-color: rgb(219, 139, 201);
+  transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+  body {
+    align-items: flex-start;
+  }
+
+  .item {
+    padding: 1rem 3rem;
+  }
+
+  .container {
+    width: 100%;
+  }
+}
